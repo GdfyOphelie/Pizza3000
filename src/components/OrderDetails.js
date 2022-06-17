@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Order = ({ items, total, id }) => {
+const OrderDetails = ({ items, total, id }) => {
     const orderItems = items.map(item => {
         return (
             <div>{item.name} - {item.price}€</div>
@@ -19,4 +19,4 @@ const Order = ({ items, total, id }) => {
     )
 }
 
-export default Order
+export default OrderDetails

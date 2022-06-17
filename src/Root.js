@@ -13,7 +13,7 @@ const Root = () => {
 			<Routes>
 				<Route exact path="/" element={<App />} />
 				<Route path="/Order" element={<Order/>} />
-				<Route path="*"element={<NotFound/>} />
+				<Route path="*" element={<NotFound/>} />
 			</Routes>
 		</Router>
 	);

@@ -5,17 +5,17 @@ import pizzas from './pizzas';
 import { useDispatch, useSelector } from 'react-redux';
 import PizzaSelection from './components/PizzaSelection';
 import {useNavigate } from 'react-router-dom';
-import Order from './components/OrderDetails';
+import OrderDetails from './components/OrderDetails';
 
 const App = () => {
 	const orders = useSelector((state) => state.orders);
 
 	const dispatch = useDispatch();
-  const navigate = useNavigate();
+    const navigate = useNavigate();
 
-	let handleClick = (page) => {
-		return navigate(`/${page}`)
-	};
+	// let handleClick = (page) => {
+	// 	return navigate(`/${page}`)
+	// };
 
 
 
